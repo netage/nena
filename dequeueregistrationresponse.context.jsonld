@@ -1,6 +1,6 @@
 {
     "@context": {
-		"nena:dequeueRegistrationStatusCode": {
+	"nena:dequeueRegistrationStatusCode": {
             "@id": "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationStatusCode",
             "@type": "xsd:token"
         },

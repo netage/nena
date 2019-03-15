@@ -1,0 +1,8 @@
+{
+    "nena:queueStateValuesCode": "Full",
+    "nena:cancelTimeStamp": "http://www.altova.com/",
+    "@type": "nena:QueueStateEventPackage",
+    "nena:queueStateEventQueueLength": "0",
+    "@context": ["https://netage.github.io/nena/context/queuestateeventpackage.context.jsonld"],
+    "nena:queueStateEventMaxLength": "0"
+}

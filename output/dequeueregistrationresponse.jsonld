@@ -1,0 +1,6 @@
+{
+    "@type": "nena:DequeueRegistrationResponse",
+    "nena:dequeueRegistrationStatusCode": "200",
+    "nena:dequeueRegistrationExpirationTime": "0",
+    "@context": ["https://netage.github.io/nena/context/dequeueregistrationresponse.context.jsonld"]
+}

@@ -1,0 +1,8 @@
+{
+    "nena:dequeueRegistrationQueueUri": "http://www.altova.com/",
+    "nena:dequeueRegistrationDequeuePreference": "0",
+    "@type": "nena:DequeueRegistrationRequest",
+    "nena:dequeueRegistrationDequeuer": "http://www.altova.com/",
+    "nena:dequeueRegistrationExpirationTime": "0",
+    "@context": ["https://netage.github.io/nena/context/dequeueregistrationrequest.context.jsonld"]
+}

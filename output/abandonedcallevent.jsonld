@@ -1,0 +1,7 @@
+{
+    "nena:cancelTimeStamp": "2001-12-17T09:30:47Z",
+    "@type": "nena:AbandonedCallEvent",
+    "nena:inviteTimeStamp": "2001-12-17T09:30:47Z",
+    "nena:inviteText": "String",
+    "@context": ["https://netage.github.io/nena/context/abandonedcallevent.context.jsonld"]
+}

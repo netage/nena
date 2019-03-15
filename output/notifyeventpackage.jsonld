@@ -1,0 +1,330 @@
+{
+    "nena:notifyEventNextHopUri": "http://www.altova.com/",
+    "@type": "nena:NotifyEventPackage",
+    "@context": ["https://netage.github.io/nena/context/notifyeventpackage.context.jsonld"],
+    "nena:notifyBodies": {
+        "edxl-cap:alertAdapter": {
+            "cap:alert": [
+                {
+                    "cap:msgType": "Ack",
+                    "cap:info": [
+                        {
+                            "cap:certainty": "Likely",
+                            "@type": "cap:AlertInfo",
+                            "cap:category": [
+                                "Other",
+                                "Security"
+                            ],
+                            "cap:audience": "String",
+                            "cap:contact": "String",
+                            "cap:instruction": "String",
+                            "cap:parameter": {
+                                "cap:value": "String",
+                                "cap:valueName": "String",
+                                "@type": [
+                                    "cap:Geocode",
+                                    "cap:EventCode",
+                                    "cap:Parameter"
+                                ]
+                            },
+                            "cap:senderName": "String",
+                            "cap:language": "en-US",
+                            "cap:responseType": [
+                                "Monitor",
+                                "Shelter"
+                            ],
+                            "cap:event": "String",
+                            "cap:onset": "2001-12-17T09:30:47Z",
+                            "cap:urgency": "Future",
+                            "cap:web": "http://www.altova.com/",
+                            "cap:headline": "String",
+                            "cap:area": {
+                                "cap:areaDesc": "String",
+                                "cap:ceiling": "String",
+                                "@type": "cap:Area",
+                                "cap:circle": "String",
+                                "cap:geocode": {
+                                    "cap:value": "String",
+                                    "cap:valueName": "String",
+                                    "@type": [
+                                        "cap:Geocode",
+                                        "cap:EventCode",
+                                        "cap:Parameter"
+                                    ]
+                                },
+                                "cap:altitude": "String",
+                                "cap:polygon": "String"
+                            },
+                            "cap:eventCode": {
+                                "cap:value": "String",
+                                "cap:valueName": "String",
+                                "@type": [
+                                    "cap:Geocode",
+                                    "cap:EventCode",
+                                    "cap:Parameter"
+                                ]
+                            },
+                            "cap:effective": "2001-12-17T09:30:47Z",
+                            "cap:expires": "2001-12-17T09:30:47Z",
+                            "cap:description": "String",
+                            "cap:resource": {
+                                "cap:uri": "http://www.altova.com/",
+                                "cap:digest": "String",
+                                "cap:resourceDesc": "String",
+                                "cap:mimeType": "String",
+                                "@type": "cap:Resource",
+                                "cap:derefUri": "String",
+                                "cap:size": "0"
+                            },
+                            "cap:severity": "Moderate"
+                        },
+                        {
+                            "cap:certainty": "Observed",
+                            "@type": "cap:AlertInfo",
+                            "cap:category": [
+                                "Met",
+                                "Health"
+                            ],
+                            "cap:audience": "String",
+                            "cap:contact": "String",
+                            "cap:instruction": "String",
+                            "cap:parameter": {
+                                "cap:value": "String",
+                                "cap:valueName": "String",
+                                "@type": [
+                                    "cap:Geocode",
+                                    "cap:EventCode",
+                                    "cap:Parameter"
+                                ]
+                            },
+                            "cap:senderName": "String",
+                            "cap:language": "en-US",
+                            "cap:responseType": [
+                                "Execute",
+                                "Monitor"
+                            ],
+                            "cap:event": "String",
+                            "cap:onset": "2002-12-17T09:30:47Z",
+                            "cap:urgency": "Immediate",
+                            "cap:web": "http://www.altova.com/",
+                            "cap:headline": "String",
+                            "cap:area": {
+                                "cap:areaDesc": "String",
+                                "cap:ceiling": "String",
+                                "@type": "cap:Area",
+                                "cap:circle": "String",
+                                "cap:geocode": {
+                                    "cap:value": "String",
+                                    "cap:valueName": "String",
+                                    "@type": [
+                                        "cap:Geocode",
+                                        "cap:EventCode",
+                                        "cap:Parameter"
+                                    ]
+                                },
+                                "cap:altitude": "String",
+                                "cap:polygon": "String"
+                            },
+                            "cap:eventCode": {
+                                "cap:value": "String",
+                                "cap:valueName": "String",
+                                "@type": [
+                                    "cap:Geocode",
+                                    "cap:EventCode",
+                                    "cap:Parameter"
+                                ]
+                            },
+                            "cap:effective": "2002-12-17T09:30:47Z",
+                            "cap:expires": "2002-12-17T09:30:47Z",
+                            "cap:description": "String",
+                            "cap:resource": {
+                                "cap:uri": "http://www.altova.com/",
+                                "cap:digest": "String",
+                                "cap:resourceDesc": "String",
+                                "cap:mimeType": "String",
+                                "@type": "cap:Resource",
+                                "cap:derefUri": "String",
+                                "cap:size": "0"
+                            },
+                            "cap:severity": "Minor"
+                        }
+                    ],
+                    "@type": "cap:Alert",
+                    "cap:restriction": "String",
+                    "cap:note": "String",
+                    "cap:references": "String",
+                    "dcterms:identifier": "String1",
+                    "cap:source": "String",
+                    "cap:scope": "Public",
+                    "cap:status": "System",
+                    "cap:sent": "2001-12-17T09:30:47Z",
+                    "cap:addresses": "String",
+                    "cap:code": "String",
+                    "cap:sender": "String",
+                    "cap:incidents": "String"
+                },
+                {
+                    "cap:msgType": "Ack",
+                    "cap:info": [
+                        {
+                            "cap:certainty": "Observed",
+                            "@type": "cap:AlertInfo",
+                            "cap:category": [
+                                "Other",
+                                "Met"
+                            ],
+                            "cap:audience": "String",
+                            "cap:contact": "String",
+                            "cap:instruction": "String",
+                            "cap:parameter": {
+                                "cap:value": "String",
+                                "cap:valueName": "String",
+                                "@type": [
+                                    "cap:Geocode",
+                                    "cap:EventCode",
+                                    "cap:Parameter"
+                                ]
+                            },
+                            "cap:senderName": "String",
+                            "cap:language": "en-US",
+                            "cap:responseType": [
+                                "Assess",
+                                "Shelter"
+                            ],
+                            "cap:event": "String",
+                            "cap:onset": "2003-12-17T09:30:47Z",
+                            "cap:urgency": "Past",
+                            "cap:web": "http://www.altova.com/",
+                            "cap:headline": "String",
+                            "cap:area": {
+                                "cap:areaDesc": "String",
+                                "cap:ceiling": "String",
+                                "@type": "cap:Area",
+                                "cap:circle": "String",
+                                "cap:geocode": {
+                                    "cap:value": "String",
+                                    "cap:valueName": "String",
+                                    "@type": [
+                                        "cap:Geocode",
+                                        "cap:EventCode",
+                                        "cap:Parameter"
+                                    ]
+                                },
+                                "cap:altitude": "String",
+                                "cap:polygon": "String"
+                            },
+                            "cap:eventCode": {
+                                "cap:value": "String",
+                                "cap:valueName": "String",
+                                "@type": [
+                                    "cap:Geocode",
+                                    "cap:EventCode",
+                                    "cap:Parameter"
+                                ]
+                            },
+                            "cap:effective": "2003-12-17T09:30:47Z",
+                            "cap:expires": "2003-12-17T09:30:47Z",
+                            "cap:description": "String",
+                            "cap:resource": {
+                                "cap:uri": "http://www.altova.com/",
+                                "cap:digest": "String",
+                                "cap:resourceDesc": "String",
+                                "cap:mimeType": "String",
+                                "@type": "cap:Resource",
+                                "cap:derefUri": "String",
+                                "cap:size": "0"
+                            },
+                            "cap:severity": "Moderate"
+                        },
+                        {
+                            "cap:certainty": "Unknown",
+                            "@type": "cap:AlertInfo",
+                            "cap:category": [
+                                "Infra",
+                                "Rescue"
+                            ],
+                            "cap:audience": "String",
+                            "cap:contact": "String",
+                            "cap:instruction": "String",
+                            "cap:parameter": {
+                                "cap:value": "String",
+                                "cap:valueName": "String",
+                                "@type": [
+                                    "cap:Geocode",
+                                    "cap:EventCode",
+                                    "cap:Parameter"
+                                ]
+                            },
+                            "cap:senderName": "String",
+                            "cap:language": "en-US",
+                            "cap:responseType": [
+                                "Shelter",
+                                "Assess"
+                            ],
+                            "cap:event": "String",
+                            "cap:onset": "2004-12-17T09:30:47Z",
+                            "cap:urgency": "Expected",
+                            "cap:web": "http://www.altova.com/",
+                            "cap:headline": "String",
+                            "cap:area": {
+                                "cap:areaDesc": "String",
+                                "cap:ceiling": "String",
+                                "@type": "cap:Area",
+                                "cap:circle": "String",
+                                "cap:geocode": {
+                                    "cap:value": "String",
+                                    "cap:valueName": "String",
+                                    "@type": [
+                                        "cap:Geocode",
+                                        "cap:EventCode",
+                                        "cap:Parameter"
+                                    ]
+                                },
+                                "cap:altitude": "String",
+                                "cap:polygon": "String"
+                            },
+                            "cap:eventCode": {
+                                "cap:value": "String",
+                                "cap:valueName": "String",
+                                "@type": [
+                                    "cap:Geocode",
+                                    "cap:EventCode",
+                                    "cap:Parameter"
+                                ]
+                            },
+                            "cap:effective": "2004-12-17T09:30:47Z",
+                            "cap:expires": "2004-12-17T09:30:47Z",
+                            "cap:description": "String",
+                            "cap:resource": {
+                                "cap:uri": "http://www.altova.com/",
+                                "cap:digest": "String",
+                                "cap:resourceDesc": "String",
+                                "cap:mimeType": "String",
+                                "@type": "cap:Resource",
+                                "cap:derefUri": "String",
+                                "cap:size": "0"
+                            },
+                            "cap:severity": "Moderate"
+                        }
+                    ],
+                    "@type": "cap:Alert",
+                    "cap:restriction": "String",
+                    "cap:note": "String",
+                    "cap:references": "String",
+                    "dcterms:identifier": "String2",
+                    "cap:source": "String",
+                    "cap:scope": "Private",
+                    "cap:status": "Draft",
+                    "cap:sent": "2001-12-17T09:30:47Z",
+                    "cap:addresses": "String",
+                    "cap:code": "String",
+                    "cap:sender": "String",
+                    "cap:incidents": "String"
+                }
+            ],
+            "@type": "edxl-cap:AlertAdapter"
+        },
+        "@type": "nena:NotifyBodies"
+    },
+    "nena:notifyEventCodes": "String"
+}

@@ -1,6 +1,14 @@
 {
     "@context": {
-        "nena:dequeueRegistrationExpirationTime": {
+        "nena:dequeueRegistrationQueueUri": {
+            "@id": "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationQueueUri",
+            "@type": "xsd:anyURI"
+        },
+		"nena:dequeueRegistrationDequeuer": {
+            "@id": "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationDequeuer",
+            "@type": "xsd:anyURI"
+        },
+		"nena:dequeueRegistrationExpirationTime": {
             "@id": "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationExpirationTime",
             "@type": "xsd:integer"
         },
@@ -16,4 +24,3 @@
         "ql": "http://semweb.mmlab.be/ns/ql#"
     }
 }
-

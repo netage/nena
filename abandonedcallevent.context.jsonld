@@ -1,11 +1,11 @@
 {
     "@context": {
         "cancelTimeStamp": {
-            "@id": "urn:nena:xml:ns:AbandonedCallExchange:2.0:cancelTimeStamp"
+            "@id": "urn:nena:xml:ns:AbandonedCallExchange:2.0:cancelTimeStamp",
             "@type": "xsd:dateTime"
         },
         "nena:inviteTimeStamp": {
-            "@id": "urn:nena:xml:ns:AbandonedCallExchange:2.0:inviteTimeStamp"
+            "@id": "urn:nena:xml:ns:AbandonedCallExchange:2.0:inviteTimeStamp",
             "@type": "xsd:dateTime"
         },
         "rr": "http://www.w3.org/ns/r2rml#",

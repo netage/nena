@@ -1,84 +1,8 @@
 {
     "@context": {
-		"nena:notifyBodiesEsrpCondition": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:notifyBodiesEsrpCondition",
-            "@type": "xsd:string"
-        },
-        "cap:sender": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:sender",
-            "@type": "xsd:string"
-        },
 		"cap:sent": {
             "@id": "urn:oasis:names:tc:emergency:cap:1.1:sent",
             "@type": "xsd:dateTime"
-        },
-		"cap:status": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:status",
-            "@type": "xsd:string"
-        },
-		"cap:source": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:source",
-            "@type": "xsd:string"
-        },
-		"cap:addresses": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:addresses",
-            "@type": "xsd:string"
-        },
-		"cap:restriction": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:restriction",
-            "@type": "xsd:string"
-        },
-		"cap:note": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:note",
-            "@type": "xsd:string"
-        },
-		"cap:scope": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:scope",
-            "@type": "xsd:string"
-        },
-		"cap:msgType": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:msgType",
-            "@type": "xsd:string"
-        },
-		"cap:references": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:references",
-            "@type": "xsd:string"
-        },
-		"cap:incidents": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:incidents",
-            "@type": "xsd:string"
-        },
-		"cap:identifier": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:identifier",
-            "@type": "xsd:string"
-        },
-		"cap:code": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:code",
-            "@type": "xsd:string"
-        },
-		"cap:language": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:language",
-            "@type": "xsd:string"
-        },
-		"cap:event": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:event",
-            "@type": "xsd:string"
-        },
-		"cap:urgency": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:urgency",
-            "@type": "xsd:string"
-        },
-		"cap:severity": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:severity",
-            "@type": "xsd:string"
-        },
-		"cap:certainty": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:certainty",
-            "@type": "xsd:string"
-        },
-		"cap:audience": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:audience",
-            "@type": "xsd:string"
         },
 		"cap:effective": {
             "@id": "urn:oasis:names:tc:emergency:cap:1.1:effective",
@@ -92,89 +16,9 @@
             "@id": "urn:oasis:names:tc:emergency:cap:1.1:expires",
             "@type": "xsd:dateTime"
         },
-		"cap:senderName": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:senderName",
-            "@type": "xsd:string"
-        },
-		"cap:headline": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:headline",
-            "@type": "xsd:string"
-        },
-		"cap:description": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:description",
-            "@type": "xsd:string"
-        },
-		"cap:instruction": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:instruction",
-            "@type": "xsd:string"
-        },
 		"cap:web": {
             "@id": "urn:oasis:names:tc:emergency:cap:1.1:web",
             "@type": "xsd:anyURI"
-        },
-		"cap:contact": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:contact",
-            "@type": "xsd:string"
-        },
-		"cap:category": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:category",
-            "@type": "xsd:string"
-        },
-		"cap:responseType": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:responseType",
-            "@type": "xsd:string"
-        },
-		"cap:areaDesc": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:areaDesc",
-            "@type": "xsd:string"
-        },
-		"cap:polygon": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:polygon",
-            "@type": "xsd:string"
-        },
-		"cap:circle": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:circle",
-            "@type": "xsd:string"
-        },
-		"cap:altitude": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:altitude",
-            "@type": "xsd:string"
-        },
-		"cap:ceiling": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:ceiling",
-            "@type": "xsd:string"
-        },
-		"cap:valueName": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:valueName",
-            "@type": "xsd:string"
-        },
-		"cap:value": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:value",
-            "@type": "xsd:string"
-        },
-		"cap:resourceDesc": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:resourceDesc",
-            "@type": "xsd:string"
-        },
-		"cap:mimeType": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:mimeType",
-            "@type": "xsd:string"
-        },
-		"cap:size": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:size",
-            "@type": "xsd:integer"
-        },
-		"cap:uri": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:uri",
-            "@type": "xsd:anyURI"
-        },
-		"cap:derefUri": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:derefUri",
-            "@type": "xsd:string"
-        },
-		"cap:digest": {
-            "@id": "urn:oasis:names:tc:emergency:cap:1.1:digest",
-            "@type": "xsd:string"
         },
         "rr": "http://www.w3.org/ns/r2rml#",
         "rml": "http://semweb.mmlab.be/ns/rml#",

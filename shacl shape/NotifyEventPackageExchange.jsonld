@@ -1,0 +1,416 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b100",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "path" : "cap:identifier"
+  }, {
+    "@id" : "_:b101",
+    "node" : "nena:valueShape",
+    "path" : "cap:parameter"
+  }, {
+    "@id" : "_:b102",
+    "datatype" : "xsd:string",
+    "sh:in" : {
+      "@list" : [ "Immediate", "Expected", "Future", "Past", "Unknown" ]
+    },
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "path" : "cap:urgency"
+  }, {
+    "@id" : "_:b105",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "NotifyBodies",
+    "node" : "nena:NotifyBodyShape",
+    "path" : "nena-ne:notifyBodies"
+  }, {
+    "@id" : "_:b11",
+    "node" : "nena:InfoShape",
+    "path" : "cap:info"
+  }, {
+    "@id" : "_:b12",
+    "datatype" : "xsd:dateTime",
+    "sh:maxCount" : 1,
+    "path" : "cap:expires"
+  }, {
+    "@id" : "_:b13",
+    "datatype" : "xsd:string",
+    "sh:in" : {
+      "@list" : [ "Restricted", "Public", "Private" ]
+    },
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "path" : "cap:scope"
+  }, {
+    "@id" : "_:b15",
+    "datatype" : "xsd:string",
+    "description" : "Enumeration of event codes.  May occur more than once",
+    "sh:minCount" : 1,
+    "name" : "NotifyEventEventCodes",
+    "path" : "nena-ne:notifyEventCodes"
+  }, {
+    "@id" : "_:b17",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:note"
+  }, {
+    "@id" : "_:b20",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "path" : "cap:sender"
+  }, {
+    "@id" : "_:b23",
+    "description" : "CAP Alert Message (version 1.1)",
+    "sh:minCount" : 0,
+    "name" : "Alerts",
+    "node" : "nena:AlertShape",
+    "path" : "cap:alert"
+  }, {
+    "@id" : "_:b24",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:derefUri"
+  }, {
+    "@id" : "_:b25",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:audience"
+  }, {
+    "@id" : "_:b26",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "path" : "cap:event"
+  }, {
+    "@id" : "_:b27",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "AlertAdapater",
+    "node" : "nena:AlertAdapaterShape",
+    "path" : "edxl-cap:alertAdapter"
+  }, {
+    "@id" : "_:b32",
+    "datatype" : "xsd:dateTime",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "path" : "cap:sent"
+  }, {
+    "@id" : "_:b33",
+    "description" : "Rule and values that triggered the event.",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "NotifyBodiesEsrpCondition",
+    "path" : "nena-ne:notifyBodiesEsrpCondition"
+  }, {
+    "@id" : "_:b34",
+    "datatype" : "xsd:anyURI",
+    "sh:maxCount" : 1,
+    "path" : "cap:uri"
+  }, {
+    "@id" : "_:b35",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:addresses"
+  }, {
+    "@id" : "_:b36",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:source"
+  }, {
+    "@id" : "_:b37",
+    "datatype" : "xsd:string",
+    "path" : "cap:value"
+  }, {
+    "@id" : "_:b38",
+    "datatype" : "xsd:string",
+    "path" : "cap:valueName"
+  }, {
+    "@id" : "_:b41",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:incidents"
+  }, {
+    "@id" : "_:b42",
+    "datatype" : "xsd:string",
+    "path" : "cap:polygon"
+  }, {
+    "@id" : "_:b43",
+    "datatype" : "xsd:dateTime",
+    "sh:maxCount" : 1,
+    "path" : "cap:onset"
+  }, {
+    "@id" : "_:b47",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "path" : "cap:identifier"
+  }, {
+    "@id" : "_:b48",
+    "datatype" : "xsd:string",
+    "sh:in" : {
+      "@list" : [ "Actual", "Exercise", "System", "Test", "Draft" ]
+    },
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "path" : "cap:status"
+  }, {
+    "@id" : "_:b49",
+    "datatype" : "xsd:string",
+    "sh:in" : {
+      "@list" : [ "Alert", "Update", "Cancel", "Ack", "Error" ]
+    },
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "path" : "cap:msgType"
+  }, {
+    "@id" : "_:b5",
+    "datatype" : "xsd:dateTime",
+    "sh:maxCount" : 1,
+    "path" : "cap:effective"
+  }, {
+    "@id" : "_:b50",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:references"
+  }, {
+    "@id" : "_:b51",
+    "datatype" : "xsd:string",
+    "path" : "cap:code"
+  }, {
+    "@id" : "_:b52",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:restriction"
+  }, {
+    "@id" : "_:b56",
+    "datatype" : "xsd:string",
+    "sh:in" : {
+      "@list" : [ "Shelter", "Evacuate", "Prepare", "Execute", "Monitor", "Assess", "None" ]
+    },
+    "sh:minCount" : 1,
+    "path" : "cap:category"
+  }, {
+    "@id" : "_:b58",
+    "node" : "nena:valueShape",
+    "path" : "cap:geocode"
+  }, {
+    "@id" : "_:b59",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:ceiling"
+  }, {
+    "@id" : "_:b6",
+    "datatype" : "xsd:string",
+    "path" : "cap:circle"
+  }, {
+    "@id" : "_:b60",
+    "datatype" : "xsd:string",
+    "path" : "cap:circle"
+  }, {
+    "@id" : "_:b61",
+    "datatype" : "xsd:string",
+    "path" : "cap:circle"
+  }, {
+    "@id" : "_:b62",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "path" : "cap:areaDesc"
+  }, {
+    "@id" : "_:b66",
+    "datatype" : "xsd:anyURI",
+    "sh:maxCount" : 1,
+    "path" : "cap:web"
+  }, {
+    "@id" : "_:b67",
+    "datatype" : "xsd:integer",
+    "sh:maxCount" : 1,
+    "path" : "cap:size"
+  }, {
+    "@id" : "_:b7",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:language"
+  }, {
+    "@id" : "_:b72",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "path" : "cap:resourceDesc"
+  }, {
+    "@id" : "_:b73",
+    "datatype" : "xsd:string",
+    "sh:in" : {
+      "@list" : [ "Geo", "Met", "Safety", "Security", "Rescue", "Fire", "Health", "Env", "Transport", "Infra", "CBRNE", "Other" ]
+    },
+    "sh:minCount" : 1,
+    "path" : "cap:category"
+  }, {
+    "@id" : "_:b76",
+    "node" : "nena:resourceShape",
+    "path" : "cap:resource"
+  }, {
+    "@id" : "_:b8",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:senderName"
+  }, {
+    "@id" : "_:b80",
+    "datatype" : "xsd:string",
+    "sh:in" : {
+      "@list" : [ "Observed", "Likely", "Possible", "Unlikely", "Unknown" ]
+    },
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "path" : "cap:certainty"
+  }, {
+    "@id" : "_:b81",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:description"
+  }, {
+    "@id" : "_:b83",
+    "datatype" : "xsd:anyURI",
+    "description" : "URI of downstream entity occurring in a Termination-Policy",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "NotifyEventNextHopUri",
+    "path" : "nena-ne:notifyEventNextHopUri"
+  }, {
+    "@id" : "_:b84",
+    "node" : "nena:areaShape",
+    "path" : "cap:area"
+  }, {
+    "@id" : "_:b88",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:digest"
+  }, {
+    "@id" : "_:b89",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:mimeType"
+  }, {
+    "@id" : "_:b9",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:altitude"
+  }, {
+    "@id" : "_:b90",
+    "node" : "nena:valueShape",
+    "path" : "cap:eventCode"
+  }, {
+    "@id" : "_:b95",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:headline"
+  }, {
+    "@id" : "_:b97",
+    "datatype" : "xsd:string",
+    "sh:in" : {
+      "@list" : [ "Extreme", "Severe", "Moderate", "Moderate", "Minor", "Unknown" ]
+    },
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "path" : "cap:severity"
+  }, {
+    "@id" : "_:b98",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:contact"
+  }, {
+    "@id" : "_:b99",
+    "datatype" : "xsd:string",
+    "sh:maxCount" : 1,
+    "path" : "cap:instruction"
+  }, {
+    "@id" : "nena:AlertAdapaterShape",
+    "@type" : "sh:NodeShape",
+    "property" : "_:b23"
+  }, {
+    "@id" : "nena:AlertShape",
+    "@type" : "sh:NodeShape",
+    "property" : [ "_:b47", "_:b20", "_:b35", "_:b48", "_:b36", "_:b17", "_:b32", "_:b49", "_:b11", "_:b13", "_:b50", "_:b41", "_:b51", "_:b52" ]
+  }, {
+    "@id" : "nena:InfoShape",
+    "@type" : "sh:NodeShape",
+    "property" : [ "_:b95", "_:b97", "_:b66", "_:b8", "_:b98", "_:b99", "_:b25", "_:b73", "_:b7", "_:b100", "_:b101", "_:b26", "_:b43", "_:b76", "_:b5", "_:b80", "_:b81", "_:b102", "_:b56", "_:b84", "_:b90", "_:b12" ]
+  }, {
+    "@id" : "nena:NotifyBodiesShape",
+    "@type" : "sh:NodeShape",
+    "property" : [ "_:b27", "_:b33" ]
+  }, {
+    "@id" : "nena:NotifyEventPackageShape",
+    "@type" : "sh:NodeShape",
+    "property" : [ "_:b105", "_:b15", "_:b83" ],
+    "targetClass" : "nena-ne:NotifyEventPackage"
+  }, {
+    "@id" : "nena:areaShape",
+    "@type" : "sh:NodeShape",
+    "property" : [ "_:b58", "_:b59", "_:b9", "_:b60", "_:b6", "_:b61", "_:b42", "_:b62" ]
+  }, {
+    "@id" : "nena:resourceShape",
+    "@type" : "sh:NodeShape",
+    "property" : [ "_:b88", "_:b24", "_:b34", "_:b67", "_:b89", "_:b72" ]
+  }, {
+    "@id" : "nena:valueShape",
+    "@type" : "sh:NodeShape",
+    "property" : [ "_:b37", "_:b38" ]
+  } ],
+  "@context" : {
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+    },
+    "datatype" : {
+      "@id" : "http://www.w3.org/ns/shacl#datatype",
+      "@type" : "@id"
+    },
+    "maxCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#maxCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "path" : {
+      "@id" : "http://www.w3.org/ns/shacl#path",
+      "@type" : "@id"
+    },
+    "node" : {
+      "@id" : "http://www.w3.org/ns/shacl#node",
+      "@type" : "@id"
+    },
+    "in" : {
+      "@id" : "http://www.w3.org/ns/shacl#in",
+      "@type" : "@id"
+    },
+    "minCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#minCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "description" : {
+      "@id" : "http://www.w3.org/ns/shacl#description"
+    },
+    "name" : {
+      "@id" : "http://www.w3.org/ns/shacl#name"
+    },
+    "property" : {
+      "@id" : "http://www.w3.org/ns/shacl#property",
+      "@type" : "@id"
+    },
+    "targetClass" : {
+      "@id" : "http://www.w3.org/ns/shacl#targetClass",
+      "@type" : "@id"
+    },
+    "cap" : "urn:oasis:names:tc:emergency:cap:1.1:",
+    "sh" : "http://www.w3.org/ns/shacl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "nena" : "urn:oasis:shacl:shape:",
+    "nena-ne" : "urn:nena:xml:ns:NotifyEventExchange:2.0:",
+    "edxl-cap" : "http://release.niem.gov/niem/adapters/edxl-cap/4.0/"
+  }
+}

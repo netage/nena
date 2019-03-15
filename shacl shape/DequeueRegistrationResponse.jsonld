@@ -1,0 +1,62 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "datatype" : "xsd:integer",
+    "description" : "Requested time in seconds this registration will expire.  The expirationTime in the response is the actual expiration, which may be equal to or greater than that in the request depending on the local policy of the ESRP.  A request expirationTime of zero is a request to deregister.",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "DequeueRegistrationExpirationTime",
+    "path" : "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationExpirationTime"
+  }, {
+    "@id" : "_:b1",
+    "datatype" : "xsd:token",
+    "description" : "Status Codes:\r\n\t\t\t\t200   Okay\tNo error\r\n\t\t\t\t506   Bad queue\r\n\t\t\t\t507   Bad dequeuePreference\r\n\t\t\t\t508   Policy Violation\r\n\t\t\t\t504   Unspecified Error",
+    "sh:maxCount" : 1,
+    "name" : "DequeueRegistrationStatusCode",
+    "path" : "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationStatusCode",
+    "pattern" : "[0-9]{3}"
+  }, {
+    "@id" : "nena:DequeueRegistrationRequest",
+    "@type" : "sh:NodeShape",
+    "property" : [ "_:b0", "_:b1" ],
+    "targetClass" : "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:DequeueRegistrationResponse"
+  } ],
+  "@context" : {
+    "property" : {
+      "@id" : "http://www.w3.org/ns/shacl#property",
+      "@type" : "@id"
+    },
+    "targetClass" : {
+      "@id" : "http://www.w3.org/ns/shacl#targetClass",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://www.w3.org/ns/shacl#description"
+    },
+    "name" : {
+      "@id" : "http://www.w3.org/ns/shacl#name"
+    },
+    "datatype" : {
+      "@id" : "http://www.w3.org/ns/shacl#datatype",
+      "@type" : "@id"
+    },
+    "maxCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#maxCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "minCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#minCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "path" : {
+      "@id" : "http://www.w3.org/ns/shacl#path",
+      "@type" : "@id"
+    },
+    "pattern" : {
+      "@id" : "http://www.w3.org/ns/shacl#pattern"
+    },
+    "sh" : "http://www.w3.org/ns/shacl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "nena" : "urn:oasis:shacl:shape:"
+  }
+}

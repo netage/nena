@@ -1,0 +1,119 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "description" : "SIP URI of dequeuer (where to send calls)",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "DequeueRegistrationDequeuer",
+    "nodeKind" : "sh:IRI",
+    "path" : "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationDequeuer"
+  }, {
+    "@id" : "_:b1",
+    "description" : "Content of INVITE message",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "InviteText",
+    "path" : "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationExpirationTime"
+  }, {
+    "@id" : "_:b2",
+    "datatype" : "xsd:dateTime",
+    "description" : "Timestamp call was received at ESRP",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "InviteTimeStamp",
+    "path" : "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:inviteTimeStamp"
+  }, {
+    "@id" : "_:b3",
+    "datatype" : "xsd:string",
+    "description" : "Content of INVITE message",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "InviteText",
+    "path" : "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:inviteText"
+  }, {
+    "@id" : "_:b4",
+    "datatype" : "xsd:dateTime",
+    "description" : "Timestamp CANCEL was received at ESRP",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "CancelTimeStamp",
+    "path" : "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:cancelTimeStamp"
+  }, {
+    "@id" : "_:b5",
+    "description" : "Timestamp CANCEL was received at ESRP",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "CancelTimeStamp",
+    "path" : "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationQueueUri"
+  }, {
+    "@id" : "_:b6",
+    "datatype" : "xsd:string",
+    "description" : "Integer from 1-5 indicating queuing preference.",
+    "sh:maxCount" : 1,
+    "name" : "DequeueRegistrationDequeuePreference",
+    "path" : "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationDequeuePreference"
+  }, {
+    "@id" : "_:b7",
+    "description" : "SIP URI of queue to register on.",
+    "sh:maxCount" : 1,
+    "name" : "DequeueRegistrationQueueUri",
+    "nodeKind" : "sh:IRI",
+    "path" : "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationQueueUri"
+  }, {
+    "@id" : "_:b8",
+    "datatype" : "xsd:integer",
+    "description" : "Requested time in seconds this registration will expire.  The expirationTime in the response is the actual expiration, which may be equal to or greater than that in the request depending on the local policy of the ESRP.  A request expirationTime of zero is a request to deregister.",
+    "sh:maxCount" : 1,
+    "name" : "DequeueRegistrationExpirationTime",
+    "path" : "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationExpirationTime"
+  }, {
+    "@id" : "nena:AbandonedCallEvent",
+    "@type" : "sh:NodeShape",
+    "property" : [ "_:b3", "_:b2", "_:b4" ],
+    "targetClass" : "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:AbandonedCallEvent"
+  }, {
+    "@id" : "nena:DequeueRegistrationRequest",
+    "@type" : "sh:NodeShape",
+    "property" : [ "_:b7", "_:b8", "_:b6", "_:b1", "_:b0", "_:b5" ],
+    "targetClass" : "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:DequeueRegistrationRequest"
+  } ],
+  "@context" : {
+    "description" : {
+      "@id" : "http://www.w3.org/ns/shacl#description"
+    },
+    "name" : {
+      "@id" : "http://www.w3.org/ns/shacl#name"
+    },
+    "nodeKind" : {
+      "@id" : "http://www.w3.org/ns/shacl#nodeKind",
+      "@type" : "@id"
+    },
+    "maxCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#maxCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "minCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#minCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "path" : {
+      "@id" : "http://www.w3.org/ns/shacl#path",
+      "@type" : "@id"
+    },
+    "datatype" : {
+      "@id" : "http://www.w3.org/ns/shacl#datatype",
+      "@type" : "@id"
+    },
+    "property" : {
+      "@id" : "http://www.w3.org/ns/shacl#property",
+      "@type" : "@id"
+    },
+    "targetClass" : {
+      "@id" : "http://www.w3.org/ns/shacl#targetClass",
+      "@type" : "@id"
+    },
+    "sh" : "http://www.w3.org/ns/shacl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "nena" : "urn:oasis:shacl:shape:"
+  }
+}

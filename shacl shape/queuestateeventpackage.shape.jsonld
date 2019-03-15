@@ -1,0 +1,89 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b3",
+    "datatype" : "xsd:string",
+    "description" : "One or more entities are actively available or are currently handling calls being enqueue",
+    "sh:in" : {
+      "@list" : [ "Active", "Inactive", "Disabled", "Full", "Standby" ]
+    },
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "QueueStateValuesCode",
+    "path" : "http://vocab.nena.org#queueStateValuesCode"
+  }, {
+    "@id" : "_:b5",
+    "datatype" : "xsd:anyURI",
+    "description" : "SIP URI of queue",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "QueueStateEventUri",
+    "path" : "http://vocab.nena.org#queueStateEventUri"
+  }, {
+    "@id" : "_:b7",
+    "datatype" : "xsd:integer",
+    "description" : "Integer indicating current number of calls on the queue",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "QueueStateEventQueueLength",
+    "path" : "http://vocab.nena.org#queueStateEventQueueLength"
+  }, {
+    "@id" : "_:b8",
+    "datatype" : "xsd:string",
+    "description" : "Integer indicating maximum length of queue",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "QueueStateEventMaxLength",
+    "path" : "http://vocab.nena.org#queueStateEventMaxLength"
+  }, {
+    "@id" : "nena:QueueStateEventPackageShape",
+    "@type" : "sh:NodeShape",
+    "property" : [ "_:b3", "_:b8", "_:b7", "_:b5" ],
+    "targetClass" : "http://vocab.nena.org#QueueStateEventPackage"
+  } ],
+  "@context" : {
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+    },
+    "in" : {
+      "@id" : "http://www.w3.org/ns/shacl#in",
+      "@type" : "@id"
+    },
+    "datatype" : {
+      "@id" : "http://www.w3.org/ns/shacl#datatype",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://www.w3.org/ns/shacl#description"
+    },
+    "name" : {
+      "@id" : "http://www.w3.org/ns/shacl#name"
+    },
+    "maxCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#maxCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "minCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#minCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "path" : {
+      "@id" : "http://www.w3.org/ns/shacl#path",
+      "@type" : "@id"
+    },
+    "property" : {
+      "@id" : "http://www.w3.org/ns/shacl#property",
+      "@type" : "@id"
+    },
+    "targetClass" : {
+      "@id" : "http://www.w3.org/ns/shacl#targetClass",
+      "@type" : "@id"
+    },
+    "sh" : "http://www.w3.org/ns/shacl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "nena" : "urn:oasis:shacl:shape:"
+  }
+}

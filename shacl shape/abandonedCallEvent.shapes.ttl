@@ -1,0 +1,31 @@
+@prefix nena:   <urn:oasis:shacl:shape:> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+nena:AbandonedCallEvent
+	a sh:NodeShape ;
+	sh:targetClass <urn:nena:xml:ns:AbandonedCallExchange:2.0:AbandonedCallEvent> ;
+	sh:property [             
+		sh:path <urn:nena:xml:ns:AbandonedCallExchange:2.0:cancelTimeStamp> ;           
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:name "CancelTimeStamp" ;
+		sh:description "Timestamp CANCEL was received at ESRP" ;
+		sh:datatype xsd:dateTime ;
+	] ;
+	sh:property [             
+		sh:path <urn:nena:xml:ns:AbandonedCallExchange:2.0:inviteTimeStamp> ;           
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:name "InviteTimeStamp" ;
+		sh:description "Timestamp call was received at ESRP" ;
+		sh:datatype xsd:dateTime ;
+	] ;
+	sh:property [             
+		sh:path <urn:nena:xml:ns:AbandonedCallExchange:2.0:inviteText> ;           
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:name "InviteText" ;
+		sh:description "Content of INVITE message" ;
+		sh:datatype xsd:string ;
+	] .

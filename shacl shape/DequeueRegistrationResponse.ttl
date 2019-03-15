@@ -1,0 +1,28 @@
+@prefix nena:   <urn:oasis:shacl:shape:> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+nena:DequeueRegistrationRequest
+	a sh:NodeShape ;
+	sh:targetClass <urn:nena:xml:ns:DequeueRegistrationExchange:2.0:DequeueRegistrationResponse> ;
+	sh:property [             
+		sh:path <urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationStatusCode> ;          
+		sh:name "DequeueRegistrationStatusCode" ;
+		sh:description """Status Codes:
+				200   Okay	No error
+				506   Bad queue
+				507   Bad dequeuePreference
+				508   Policy Violation
+				504   Unspecified Error""" ;
+		sh:datatype xsd:token;
+		sh:maxCount 1 ;
+		sh:pattern "[0-9]{3}";
+	] ;
+	sh:property [             
+		sh:path <urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationExpirationTime> ;           
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:datatype xsd:integer;
+		sh:name "DequeueRegistrationExpirationTime" ;
+		sh:description "Requested time in seconds this registration will expire.  The expirationTime in the response is the actual expiration, which may be equal to or greater than that in the request depending on the local policy of the ESRP.  A request expirationTime of zero is a request to deregister." ;
+	] .

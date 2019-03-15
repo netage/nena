@@ -1,0 +1,67 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "datatype" : "xsd:string",
+    "description" : "Content of INVITE message",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "InviteText",
+    "path" : "urn:nena:xml:ns:AbandonedCallExchange:2.0:inviteText"
+  }, {
+    "@id" : "_:b1",
+    "datatype" : "xsd:dateTime",
+    "description" : "Timestamp call was received at ESRP",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "InviteTimeStamp",
+    "path" : "urn:nena:xml:ns:AbandonedCallExchange:2.0:inviteTimeStamp"
+  }, {
+    "@id" : "_:b2",
+    "datatype" : "xsd:dateTime",
+    "description" : "Timestamp CANCEL was received at ESRP",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "CancelTimeStamp",
+    "path" : "urn:nena:xml:ns:AbandonedCallExchange:2.0:cancelTimeStamp"
+  }, {
+    "@id" : "nena:AbandonedCallEvent",
+    "@type" : "sh:NodeShape",
+    "property" : [ "_:b0", "_:b1", "_:b2" ],
+    "targetClass" : "urn:nena:xml:ns:AbandonedCallExchange:2.0:AbandonedCallEvent"
+  } ],
+  "@context" : {
+    "property" : {
+      "@id" : "http://www.w3.org/ns/shacl#property",
+      "@type" : "@id"
+    },
+    "targetClass" : {
+      "@id" : "http://www.w3.org/ns/shacl#targetClass",
+      "@type" : "@id"
+    },
+    "datatype" : {
+      "@id" : "http://www.w3.org/ns/shacl#datatype",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://www.w3.org/ns/shacl#description"
+    },
+    "name" : {
+      "@id" : "http://www.w3.org/ns/shacl#name"
+    },
+    "maxCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#maxCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "minCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#minCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "path" : {
+      "@id" : "http://www.w3.org/ns/shacl#path",
+      "@type" : "@id"
+    },
+    "sh" : "http://www.w3.org/ns/shacl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "nena" : "urn:oasis:shacl:shape:"
+  }
+}

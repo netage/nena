@@ -186,7 +186,7 @@
         "sem": "http://semanticweb.cs.vu.nl/2009/11/sem/",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "ql": "http://semweb.mmlab.be/ns/ql#",
-		"cap": "urn:oasis:names:tc:emergency:cap:1.1:" .
+	"cap": "urn:oasis:names:tc:emergency:cap:1.1:"
     }
 }
 

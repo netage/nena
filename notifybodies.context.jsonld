@@ -1,0 +1,192 @@
+{
+    "@context": {
+		"nena:notifyBodiesEsrpCondition": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:notifyBodiesEsrpCondition",
+            "@type": "xsd:string"
+        },
+        "cap:sender": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:sender",
+            "@type": "xsd:string"
+        },
+		"cap:sent": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:sent",
+            "@type": "xsd:dateTime"
+        },
+		"cap:status": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:status",
+            "@type": "xsd:string"
+        },
+		"cap:source": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:source",
+            "@type": "xsd:string"
+        },
+		"cap:addresses": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:addresses",
+            "@type": "xsd:string"
+        },
+		"cap:restriction": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:restriction",
+            "@type": "xsd:string"
+        },
+		"cap:note": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:note",
+            "@type": "xsd:string"
+        },
+		"cap:scope": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:scope",
+            "@type": "xsd:string"
+        },
+		"cap:msgType": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:msgType",
+            "@type": "xsd:string"
+        },
+		"cap:references": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:references",
+            "@type": "xsd:string"
+        },
+		"cap:incidents": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:incidents",
+            "@type": "xsd:string"
+        },
+		"cap:identifier": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:identifier",
+            "@type": "xsd:string"
+        },
+		"cap:code": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:code",
+            "@type": "xsd:string"
+        },
+		"cap:language": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:language",
+            "@type": "xsd:string"
+        },
+		"cap:event": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:event",
+            "@type": "xsd:string"
+        },
+		"cap:urgency": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:urgency",
+            "@type": "xsd:string"
+        },
+		"cap:severity": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:severity",
+            "@type": "xsd:string"
+        },
+		"cap:certainty": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:certainty",
+            "@type": "xsd:string"
+        },
+		"cap:audience": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:audience",
+            "@type": "xsd:string"
+        },
+		"cap:effective": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:effective",
+            "@type": "xsd:dateTime"
+        },
+		"cap:onset": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:onset",
+            "@type": "xsd:dateTime"
+        },
+		"cap:expires": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:expires",
+            "@type": "xsd:dateTime"
+        },
+		"cap:senderName": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:senderName",
+            "@type": "xsd:string"
+        },
+		"cap:headline": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:headline",
+            "@type": "xsd:string"
+        },
+		"cap:description": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:description",
+            "@type": "xsd:string"
+        },
+		"cap:instruction": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:instruction",
+            "@type": "xsd:string"
+        },
+		"cap:web": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:web",
+            "@type": "xsd:anyURI"
+        },
+		"cap:contact": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:contact",
+            "@type": "xsd:string"
+        },
+		"cap:category": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:category",
+            "@type": "xsd:string"
+        },
+		"cap:responseType": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:responseType",
+            "@type": "xsd:string"
+        },
+		"cap:areaDesc": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:areaDesc",
+            "@type": "xsd:string"
+        },
+		"cap:polygon": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:polygon",
+            "@type": "xsd:string"
+        },
+		"cap:circle": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:circle",
+            "@type": "xsd:string"
+        },
+		"cap:altitude": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:altitude",
+            "@type": "xsd:string"
+        },
+		"cap:ceiling": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:ceiling",
+            "@type": "xsd:string"
+        },
+		"cap:valueName": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:valueName",
+            "@type": "xsd:string"
+        },
+		"cap:value": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:value",
+            "@type": "xsd:string"
+        },
+		"cap:resourceDesc": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:resourceDesc",
+            "@type": "xsd:string"
+        },
+		"cap:mimeType": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:mimeType",
+            "@type": "xsd:string"
+        },
+		"cap:size": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:size",
+            "@type": "xsd:integer"
+        },
+		"cap:uri": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:uri",
+            "@type": "xsd:anyURI"
+        },
+		"cap:derefUri": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:derefUri",
+            "@type": "xsd:string"
+        },
+		"cap:digest": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:digest",
+            "@type": "xsd:string"
+        },
+        "rr": "http://www.w3.org/ns/r2rml#",
+        "rml": "http://semweb.mmlab.be/ns/rml#",
+        "carml": "http://carml.taxonic.com/carml/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "nena": "urn:nena:xml:ns:NotifyEventExchange:2.0:",
+        "dcterms": "http://purl.org/dc/terms/",
+        "sem": "http://semanticweb.cs.vu.nl/2009/11/sem/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "ql": "http://semweb.mmlab.be/ns/ql#",
+		"cap": "urn:oasis:names:tc:emergency:cap:1.1:" .
+    }
+}
+

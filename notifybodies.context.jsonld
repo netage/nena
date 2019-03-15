@@ -182,6 +182,7 @@
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "nena": "urn:nena:xml:ns:NotifyEventExchange:2.0:",
+		"edxl-cap": "http://release.niem.gov/niem/adapters/edxl-cap/4.0/",
         "dcterms": "http://purl.org/dc/terms/",
         "sem": "http://semanticweb.cs.vu.nl/2009/11/sem/",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

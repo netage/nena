@@ -1,12 +1,13 @@
 {
-    "cancelTimeStamp": {
-        "@type": "xsd:dateTime"
-    },
-    "nena:inviteTimeStamp": {
-        "@type": "xsd:dateTime"
-    },
-    "nena:inviteText": "String",
     "@context": {
+        "cancelTimeStamp": {
+            "@id": "urn:nena:xml:ns:AbandonedCallExchange:2.0:cancelTimeStamp"
+            "@type": "xsd:dateTime"
+        },
+        "nena:inviteTimeStamp": {
+            "@id": "urn:nena:xml:ns:AbandonedCallExchange:2.0:inviteTimeStamp"
+            "@type": "xsd:dateTime"
+        },
         "rr": "http://www.w3.org/ns/r2rml#",
         "rml": "http://semweb.mmlab.be/ns/rml#",
         "carml": "http://carml.taxonic.com/carml/",

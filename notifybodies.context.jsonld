@@ -5,175 +5,175 @@
             "@type": "xsd:string"
         },
         "cap:sender": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:sender",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:sender",
             "@type": "xsd:string"
         },
 		"cap:sent": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:sent",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:sent",
             "@type": "xsd:dateTime"
         },
 		"cap:status": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:status",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:status",
             "@type": "xsd:string"
         },
 		"cap:source": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:source",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:source",
             "@type": "xsd:string"
         },
 		"cap:addresses": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:addresses",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:addresses",
             "@type": "xsd:string"
         },
 		"cap:restriction": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:restriction",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:restriction",
             "@type": "xsd:string"
         },
 		"cap:note": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:note",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:note",
             "@type": "xsd:string"
         },
 		"cap:scope": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:scope",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:scope",
             "@type": "xsd:string"
         },
 		"cap:msgType": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:msgType",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:msgType",
             "@type": "xsd:string"
         },
 		"cap:references": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:references",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:references",
             "@type": "xsd:string"
         },
 		"cap:incidents": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:incidents",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:incidents",
             "@type": "xsd:string"
         },
 		"cap:identifier": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:identifier",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:identifier",
             "@type": "xsd:string"
         },
 		"cap:code": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:code",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:code",
             "@type": "xsd:string"
         },
 		"cap:language": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:language",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:language",
             "@type": "xsd:string"
         },
 		"cap:event": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:event",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:event",
             "@type": "xsd:string"
         },
 		"cap:urgency": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:urgency",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:urgency",
             "@type": "xsd:string"
         },
 		"cap:severity": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:severity",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:severity",
             "@type": "xsd:string"
         },
 		"cap:certainty": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:certainty",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:certainty",
             "@type": "xsd:string"
         },
 		"cap:audience": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:audience",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:audience",
             "@type": "xsd:string"
         },
 		"cap:effective": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:effective",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:effective",
             "@type": "xsd:dateTime"
         },
 		"cap:onset": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:onset",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:onset",
             "@type": "xsd:dateTime"
         },
 		"cap:expires": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:expires",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:expires",
             "@type": "xsd:dateTime"
         },
 		"cap:senderName": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:senderName",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:senderName",
             "@type": "xsd:string"
         },
 		"cap:headline": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:headline",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:headline",
             "@type": "xsd:string"
         },
 		"cap:description": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:description",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:description",
             "@type": "xsd:string"
         },
 		"cap:instruction": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:instruction",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:instruction",
             "@type": "xsd:string"
         },
 		"cap:web": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:web",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:web",
             "@type": "xsd:anyURI"
         },
 		"cap:contact": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:contact",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:contact",
             "@type": "xsd:string"
         },
 		"cap:category": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:category",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:category",
             "@type": "xsd:string"
         },
 		"cap:responseType": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:responseType",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:responseType",
             "@type": "xsd:string"
         },
 		"cap:areaDesc": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:areaDesc",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:areaDesc",
             "@type": "xsd:string"
         },
 		"cap:polygon": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:polygon",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:polygon",
             "@type": "xsd:string"
         },
 		"cap:circle": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:circle",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:circle",
             "@type": "xsd:string"
         },
 		"cap:altitude": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:altitude",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:altitude",
             "@type": "xsd:string"
         },
 		"cap:ceiling": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:ceiling",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:ceiling",
             "@type": "xsd:string"
         },
 		"cap:valueName": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:valueName",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:valueName",
             "@type": "xsd:string"
         },
 		"cap:value": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:value",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:value",
             "@type": "xsd:string"
         },
 		"cap:resourceDesc": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:resourceDesc",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:resourceDesc",
             "@type": "xsd:string"
         },
 		"cap:mimeType": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:mimeType",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:mimeType",
             "@type": "xsd:string"
         },
 		"cap:size": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:size",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:size",
             "@type": "xsd:integer"
         },
 		"cap:uri": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:uri",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:uri",
             "@type": "xsd:anyURI"
         },
 		"cap:derefUri": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:derefUri",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:derefUri",
             "@type": "xsd:string"
         },
 		"cap:digest": {
-            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:digest",
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:digest",
             "@type": "xsd:string"
         },
         "rr": "http://www.w3.org/ns/r2rml#",
@@ -186,7 +186,7 @@
         "sem": "http://semanticweb.cs.vu.nl/2009/11/sem/",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "ql": "http://semweb.mmlab.be/ns/ql#",
-	"cap": "urn:oasis:names:tc:emergency:cap:1.1:"
+		"cap": "urn:oasis:names:tc:emergency:cap:1.1:"
     }
 }
 

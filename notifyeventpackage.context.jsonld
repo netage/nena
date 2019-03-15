@@ -1,5 +1,8 @@
 {
     "@context": {
+		"nena:notifyEventNextHopUri": {
+            "@id": "urn:nena:xml:ns:NotifyEventExchange:2.0:notifyEventNextHopUri",
+            "@type": "xsd:anyURI"
 		"cap:sent": {
             "@id": "urn:oasis:names:tc:emergency:cap:1.1:sent",
             "@type": "xsd:dateTime"

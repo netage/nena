@@ -1,5 +1,5 @@
 {
-    "nena:cancelTimeStamp": {
+    "cancelTimeStamp": {
         "@type": "xsd:dateTime"
     },
     "nena:inviteTimeStamp": {

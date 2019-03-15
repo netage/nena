@@ -1,6 +1,6 @@
 {
     "@context": {
-        "cancelTimeStamp": {
+        "nena:cancelTimeStamp": {
             "@id": "urn:nena:xml:ns:AbandonedCallExchange:2.0:cancelTimeStamp",
             "@type": "xsd:dateTime"
         },

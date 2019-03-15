@@ -20,6 +20,14 @@
             "@id": "urn:oasis:names:tc:emergency:cap:1.1:web",
             "@type": "xsd:anyURI"
         },
+		"cap:size": {
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:size",
+            "@type": "xsd:integer"
+        },
+		"cap:uri": {
+            "@id": "urn:oasis:names:tc:emergency:cap:1.1:uri",
+            "@type": "xsd:anyURI"
+        },
         "rr": "http://www.w3.org/ns/r2rml#",
         "rml": "http://semweb.mmlab.be/ns/rml#",
         "carml": "http://carml.taxonic.com/carml/",

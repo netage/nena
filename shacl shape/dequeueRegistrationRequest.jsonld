@@ -5,7 +5,7 @@
     "sh:maxCount" : 1,
     "sh:minCount" : 1,
     "name" : "DequeueRegistrationDequeuer",
-    "nodeKind" : "sh:IRI",
+    "datatype" : "xsd:anyURI",
     "path" : "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationDequeuer"
   }, {
     "@id" : "_:b1",
@@ -57,7 +57,7 @@
     "description" : "SIP URI of queue to register on.",
     "sh:maxCount" : 1,
     "name" : "DequeueRegistrationQueueUri",
-    "nodeKind" : "sh:IRI",
+    "datatype" : "xsd:anyURI",
     "path" : "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationQueueUri"
   }, {
     "@id" : "_:b8",

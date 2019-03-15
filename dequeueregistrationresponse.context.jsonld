@@ -5,7 +5,7 @@
             "@type": "xsd:token"
         },
         "nena:dequeueRegistrationExpirationTime": {
-            "@id": "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:DequeueRegistrationExpirationTime",
+            "@id": "urn:nena:xml:ns:DequeueRegistrationExchange:2.0:dequeueRegistrationExpirationTime",
             "@type": "xsd:integer"
         },
         "rr": "http://www.w3.org/ns/r2rml#",

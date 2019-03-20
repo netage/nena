@@ -1,0 +1,64 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix carml: <http://carml.taxonic.com/carml/> .
+@prefix nena:   <urn:nena:xml:ns:QueueStateEventExchange:2.0:> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<#SubjectMapping> a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source [
+      a carml:Stream ;
+	  carml:declaresNamespace [
+		carml:namespacePrefix "df" ;
+        carml:namespaceName "urn:nena:xml:ns:QueueStateEventExchange:2.0" ;
+      ] ;
+    ] ;
+    rml:referenceFormulation ql:XPath ;
+    rml:iterator "/df:QueueStateEventPackage" ;
+  ] ;
+
+  rr:subjectMap [
+    rr:template "http://data.nena.org/dequeue_registration_request/{./df:QueueStateEventUri}/{./df:QueueStateEventQueueLength}/{./df:QueueStateEventMaxLength}/{./df:QueueStateValuesCode}";
+    rr:class nena:QueueStateEventPackage ;
+    rr:termType rr:IRI ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate nena:queueStateEventUri;
+    rr:objectMap [
+	  rr:datatype xsd:anyURI;
+      rml:reference "df:QueueStateEventUri";
+    ]
+ ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate nena:queueStateEventQueueLength;
+    rr:objectMap [
+	  rr:datatype xsd:integer;
+      rml:reference "df:QueueStateEventQueueLength";
+    ]
+ ] ;
+ 
+   rr:predicateObjectMap [
+    rr:predicate nena:queueStateEventMaxLength;
+    rr:objectMap [
+	  rr:datatype xsd:string;
+      rml:reference "df:QueueStateEventMaxLength";
+    ]
+ ] ;
+    
+  rr:predicateObjectMap [
+    rr:predicate nena:queueStateValuesCode;
+    rr:objectMap [
+	  rr:datatype xsd:string;
+      rml:reference "df:QueueStateValuesCode";
+    ]
+ ] .
+    
+
+  
+  

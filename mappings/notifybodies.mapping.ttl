@@ -1,0 +1,766 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix carml: <http://carml.taxonic.com/carml/> .
+@prefix cap:   <urn:oasis:names:tc:emergency:cap:1.1:> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nena-ne: <urn:nena:xml:ns:NotifyEventExchange:2.0:> .
+@prefix edxl-cap: <http://release.niem.gov/niem/adapters/edxl-cap/4.0/>.
+
+<#NotifyBodies> a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source [
+      a carml:Stream ;
+	  carml:declaresNamespace [
+		carml:namespacePrefix "oasis" ;
+        carml:namespaceName "urn:oasis:names:tc:emergency:cap:1.1" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "nena-ne" ;
+        carml:namespaceName "urn:nena:xml:ns:NotifyEventExchange:2.0" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "edxl-cap" ;
+        carml:namespaceName "http://release.niem.gov/niem/adapters/edxl-cap/3.0/" ;
+      ] ;
+    ] ;
+    rml:referenceFormulation ql:XPath ;
+    rml:iterator "/nena-ne:NotifyBodies" ;
+  ] ;
+
+  rr:subjectMap [
+    rr:template "NotifyBodies" ;
+    rr:class nena-ne:NotifyBody ;
+    rr:termType rr:BlankNode ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate nena-ne:notifyBodiesEsrpCondition;
+    rr:objectMap [
+	  rr:template "{./nena-ne:NotifyBodiesEsrpCondition}" ;
+	  rr:termType rr:BlankNode ;
+    ]
+ ] ;
+ 
+ rr:predicateObjectMap [
+    rr:predicate edxl-cap:alertAdapter;
+    rr:objectMap [
+	  rr:template "AlertAdapter" ;
+	  rr:termType rr:BlankNode ;
+    ]
+ ] .
+ 
+<#EsrpCondition> a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source [
+      a carml:Stream ;
+	  carml:declaresNamespace [
+		carml:namespacePrefix "oasis" ;
+        carml:namespaceName "urn:oasis:names:tc:emergency:cap:1.1" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "nena-ne" ;
+        carml:namespaceName "urn:nena:xml:ns:NotifyEventExchange:2.0" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "edxl-cap" ;
+        carml:namespaceName "http://release.niem.gov/niem/adapters/edxl-cap/3.0/" ;
+      ] ;
+    ] ;
+    rml:referenceFormulation ql:XPath ;
+    rml:iterator "/nena-ne:NotifyBodies" ;
+  ] ;
+
+  rr:subjectMap [
+    rr:template "{./nena-ne:NotifyBodiesEsrpCondition}" ;
+    rr:class nena-ne:NotifyBodiesEsrpCondition ;
+    rr:termType rr:BlankNode ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate nena-ne:notifyBodiesEsrpCondition;
+    rr:objectMap [
+	  rr:datatype xsd:string;
+      rml:reference "nena-ne:NotifyBodiesEsrpCondition" ;
+    ]
+ ] .
+ 
+<#AlertAdapter> a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source [
+      a carml:Stream ;
+	  carml:declaresNamespace [
+		carml:namespacePrefix "oasis" ;
+        carml:namespaceName "urn:oasis:names:tc:emergency:cap:1.1" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "nena-ne" ;
+        carml:namespaceName "urn:nena:xml:ns:NotifyEventExchange:2.0" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "edxl-cap" ;
+        carml:namespaceName "http://release.niem.gov/niem/adapters/edxl-cap/3.0/" ;
+      ] ;
+    ] ;
+    rml:referenceFormulation ql:XPath ;
+    rml:iterator "/nena-ne:NotifyBodies/edxl-cap:AlertAdapter/oasis:alert" ;
+  ] ;
+
+  rr:subjectMap [
+    rr:template "AlertAdapter" ;
+    rr:class edxl-cap:AlertAdapter ;
+    rr:termType rr:BlankNode ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:alert;
+    rr:objectMap [
+	  rr:template "{./oasis:identifier}" ;
+      rr:termType rr:BlankNode ;
+    ]
+ ] .
+ 
+<#SubjectMapping> a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source [
+      a carml:Stream ;
+	  carml:declaresNamespace [
+		carml:namespacePrefix "oasis" ;
+        carml:namespaceName "urn:oasis:names:tc:emergency:cap:1.1" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "nena-ne" ;
+        carml:namespaceName "urn:nena:xml:ns:NotifyEventExchange:2.0" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "edxl-cap" ;
+        carml:namespaceName "http://release.niem.gov/niem/adapters/edxl-cap/3.0/" ;
+      ] ;
+    ] ;
+    rml:referenceFormulation ql:XPath ;
+    rml:iterator "/nena-ne:NotifyBodies/edxl-cap:AlertAdapter/oasis:alert" ;
+  ] ;
+
+  rr:subjectMap [
+    rr:template "{./oasis:identifier}" ;
+    rr:class cap:Alert ;
+    rr:termType rr:BlankNode ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:sender;
+    rr:objectMap [
+	  rr:datatype xsd:string;
+      rml:reference "oasis:sender";
+    ]
+ ] ;
+ 
+ rr:predicateObjectMap [
+    rr:predicate cap:sent;
+    rr:objectMap [
+	  rr:datatype xsd:dateTime;
+      rml:reference "oasis:sent";
+    ]
+ ] ;
+ 
+   rr:predicateObjectMap [
+    rr:predicate cap:status;
+    rr:objectMap [
+	  rr:datatype xsd:string;
+      rml:reference "oasis:status";
+    ]
+ ] ;
+ 
+    rr:predicateObjectMap [
+    rr:predicate cap:source;
+    rr:objectMap [
+	  rr:datatype xsd:string;
+      rml:reference "oasis:source";
+    ]
+ ] ;
+  
+      rr:predicateObjectMap [
+    rr:predicate cap:addresses;
+    rr:objectMap [
+	  rr:datatype xsd:string;
+      rml:reference "oasis:addresses";
+    ]
+ ] ;
+ 
+       rr:predicateObjectMap [
+    rr:predicate cap:restriction;
+    rr:objectMap [
+	  rr:datatype xsd:string;
+      rml:reference "oasis:restriction";
+    ]
+ ] ;
+ 
+        rr:predicateObjectMap [
+    rr:predicate cap:note;
+    rr:objectMap [
+	  rr:datatype xsd:string;
+      rml:reference "oasis:note";
+    ]
+ ] ;
+ 
+       rr:predicateObjectMap [
+    rr:predicate cap:scope;
+    rr:objectMap [
+	  rr:datatype xsd:string;
+      rml:reference "oasis:scope";
+    ]
+ ] ;
+  
+      rr:predicateObjectMap [
+    rr:predicate cap:msgType;
+    rr:objectMap [
+	  rr:datatype xsd:string;
+      rml:reference "oasis:msgType";
+    ]
+ ] ;
+ 
+     rr:predicateObjectMap [
+    rr:predicate cap:references;
+    rr:objectMap [
+	  rr:datatype xsd:string;
+      rml:reference "oasis:references";
+    ]
+ ] ;
+ 
+     rr:predicateObjectMap [
+    rr:predicate cap:incidents;
+    rr:objectMap [
+	  rr:datatype xsd:string;
+      rml:reference "oasis:incidents";
+    ]
+ ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:identifier;
+    rr:objectMap [
+	rr:datatype xsd:string;
+      rml:reference "oasis:identifier";
+    ]
+ ] ;
+ 
+ rr:predicateObjectMap [
+    rr:predicate cap:code ;
+    rr:objectMap [
+      carml:multiReference "oasis:code" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:info ;
+    rr:objectMap [
+      carml:multiTemplate "{oasis:info/oasis:effective}-{oasis:info/oasis:onset}-{oasis:info/oasis:expires}" ;
+      rr:termType rr:BlankNode ;
+    ] ;
+  ] ;
+   
+.
+
+<#info> a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source [
+      a carml:Stream ;
+	  carml:declaresNamespace [
+		carml:namespacePrefix "oasis" ;
+        carml:namespaceName "urn:oasis:names:tc:emergency:cap:1.1" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "nena-ne" ;
+        carml:namespaceName "urn:nena:xml:ns:NotifyEventExchange:2.0" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "edxl-cap" ;
+        carml:namespaceName "http://release.niem.gov/niem/adapters/edxl-cap/3.0/" ;
+      ] ;
+    ] ;
+    rml:referenceFormulation ql:XPath ;
+    rml:iterator "/nena-ne:NotifyBodies/edxl-cap:AlertAdapter/oasis:alert/oasis:info" ;
+  ] ;
+
+  rr:subjectMap [
+    rr:template "{oasis:expires}-{oasis:onset}-{oasis:expires}" ;
+    rr:class cap:AlertInfo ;
+    rr:termType rr:BlankNode ;
+  ] ;
+  
+   rr:predicateObjectMap [
+    rr:predicate cap:language ;
+    rr:objectMap [
+      rml:reference "oasis:language" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:event ;
+    rr:objectMap [
+      rml:reference "oasis:event" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:urgency ;
+    rr:objectMap [
+      rml:reference "oasis:urgency" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate cap:severity ;
+    rr:objectMap [
+      rml:reference "oasis:severity" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:certainty ;
+    rr:objectMap [
+      rml:reference "oasis:certainty" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:audience ;
+    rr:objectMap [
+      rml:reference "oasis:audience" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:effective ;
+    rr:objectMap [
+      rml:reference "oasis:effective" ;
+      rr:datatype xsd:dateTime ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:onset ;
+    rr:objectMap [
+      rml:reference "oasis:onset" ;
+      rr:datatype xsd:dateTime ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:expires ;
+    rr:objectMap [
+      rml:reference "oasis:expires" ;
+      rr:datatype xsd:dateTime ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:senderName ;
+    rr:objectMap [
+      rml:reference "oasis:senderName" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:headline ;
+    rr:objectMap [
+      rml:reference "oasis:headline" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:description ;
+    rr:objectMap [
+      rml:reference "oasis:description" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:instruction ;
+    rr:objectMap [
+      rml:reference "oasis:instruction" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:web ;
+    rr:objectMap [
+      rml:reference "oasis:web" ;
+      rr:datatype xsd:anyURI ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:contact ;
+    rr:objectMap [
+      rml:reference "oasis:contact" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:category ;
+    rr:objectMap [
+      carml:multiReference "oasis:category" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:responseType ;
+    rr:objectMap [
+      carml:multiReference "oasis:responseType" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+    rr:predicateObjectMap [
+    rr:predicate cap:eventCode ;
+    rr:objectMap [
+      carml:multiTemplate "{oasis:eventCode/oasis:valueName}-{oasis:eventCode/oasis:value}" ;
+      rr:termType rr:BlankNode ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:parameter ;
+    rr:objectMap [
+      carml:multiTemplate "{oasis:parameter/oasis:valueName}-{oasis:parameter/oasis:value}" ;
+      rr:termType rr:BlankNode ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:resource ;
+    rr:objectMap [
+      carml:multiTemplate "{oasis:resource/oasis:derefUri}-{oasis:resource/oasis:size}" ;
+      rr:termType rr:BlankNode ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:area ;
+    rr:objectMap [
+      carml:multiTemplate "{oasis:area/oasis:areaDesc}" ;
+      rr:termType rr:BlankNode ;
+    ] ;
+  ] ;
+  .
+  
+<#Area> a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source [
+      a carml:Stream ;
+	  carml:declaresNamespace [
+		carml:namespacePrefix "oasis" ;
+        carml:namespaceName "urn:oasis:names:tc:emergency:cap:1.1" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "nena-ne" ;
+        carml:namespaceName "urn:nena:xml:ns:NotifyEventExchange:2.0" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "edxl-cap" ;
+        carml:namespaceName "http://release.niem.gov/niem/adapters/edxl-cap/3.0/" ;
+      ] ;
+    ] ;
+    rml:referenceFormulation ql:XPath ;
+    rml:iterator "/nena-ne:NotifyBodies/edxl-cap:AlertAdapter/oasis:alert/oasis:info/oasis:area" ;
+  ] ;
+
+  rr:subjectMap [
+    rr:template "{oasis:areaDesc}" ;
+    rr:class cap:Area ;
+    rr:termType rr:BlankNode ;
+  ] ;
+  
+   rr:predicateObjectMap [
+    rr:predicate cap:areaDesc;
+    rr:objectMap [
+      rml:reference "oasis:areaDesc" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:polygon ;
+    rr:objectMap [
+      carml:multiReference "oasis:polygon" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+   rr:predicateObjectMap [
+    rr:predicate cap:circle ;
+    rr:objectMap [
+      carml:multiReference "oasis:circle" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+   rr:predicateObjectMap [
+    rr:predicate cap:altitude ;
+    rr:objectMap [
+      rml:reference "oasis:altitude" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:ceiling ;
+    rr:objectMap [
+      rml:reference "oasis:ceiling" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:geocode ;
+    rr:objectMap [
+      carml:multiTemplate "{oasis:geocode/oasis:valueName}-{oasis:geocode/oasis:value}" ;
+      rr:termType rr:BlankNode ;
+    ] ;
+  ] ;
+  .
+  
+<#Geocode> a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source [
+      a carml:Stream ;
+	  carml:declaresNamespace [
+		carml:namespacePrefix "oasis" ;
+        carml:namespaceName "urn:oasis:names:tc:emergency:cap:1.1" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "nena-ne" ;
+        carml:namespaceName "urn:nena:xml:ns:NotifyEventExchange:2.0" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "edxl-cap" ;
+        carml:namespaceName "http://release.niem.gov/niem/adapters/edxl-cap/3.0/" ;
+      ] ;
+    ] ;
+    rml:referenceFormulation ql:XPath ;
+    rml:iterator "/nena-ne:NotifyBodies/edxl-cap:AlertAdapter/oasis:alert/oasis:info/oasis:geocode" ;
+  ] ;
+
+  rr:subjectMap [
+    rr:template "{oasis:valueName}-{oasis:value}" ;
+    rr:class cap:Geocode ;
+    rr:termType rr:BlankNode ;
+  ] ;
+  
+   rr:predicateObjectMap [
+    rr:predicate cap:valueName ;
+    rr:objectMap [
+      rml:reference "oasis:valueName" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:value ;
+    rr:objectMap [
+      rml:reference "oasis:value" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  .
+  
+<#Resource> a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source [
+      a carml:Stream ;
+	  carml:declaresNamespace [
+		carml:namespacePrefix "oasis" ;
+        carml:namespaceName "urn:oasis:names:tc:emergency:cap:1.1" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "nena-ne" ;
+        carml:namespaceName "urn:nena:xml:ns:NotifyEventExchange:2.0" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "edxl-cap" ;
+        carml:namespaceName "http://release.niem.gov/niem/adapters/edxl-cap/3.0/" ;
+      ] ;
+    ] ;
+    rml:referenceFormulation ql:XPath ;
+    rml:iterator "/nena-ne:NotifyBodies/edxl-cap:AlertAdapter/oasis:alert/oasis:info/oasis:resource" ;
+  ] ;
+
+  rr:subjectMap [
+    rr:template "{oasis:derefUri}-{oasis:size}" ;
+    rr:class cap:Resource ;
+    rr:termType rr:BlankNode ;
+  ] ;
+  
+   rr:predicateObjectMap [
+    rr:predicate cap:resourceDesc ;
+    rr:objectMap [
+      rml:reference "oasis:resourceDesc" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:mimeType ;
+    rr:objectMap [
+      rml:reference "oasis:mimeType" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+   rr:predicateObjectMap [
+    rr:predicate cap:size ;
+    rr:objectMap [
+      rml:reference "oasis:size" ;
+      rr:datatype xsd:integer ;
+    ] ;
+  ] ;
+  
+   rr:predicateObjectMap [
+    rr:predicate cap:uri ;
+    rr:objectMap [
+      rml:reference "oasis:uri" ;
+      rr:datatype xsd:anyURI ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:derefUri ;
+    rr:objectMap [
+      rml:reference "oasis:derefUri" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:digest ;
+    rr:objectMap [
+      rml:reference "oasis:digest" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  .
+  
+  <#EventCode> a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source [
+      a carml:Stream ;
+	  carml:declaresNamespace [
+		carml:namespacePrefix "oasis" ;
+        carml:namespaceName "urn:oasis:names:tc:emergency:cap:1.1" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "nena-ne" ;
+        carml:namespaceName "urn:nena:xml:ns:NotifyEventExchange:2.0" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "edxl-cap" ;
+        carml:namespaceName "http://release.niem.gov/niem/adapters/edxl-cap/3.0/" ;
+      ] ;
+    ] ;
+    rml:referenceFormulation ql:XPath ;
+    rml:iterator "/nena-ne:NotifyBodies/edxl-cap:AlertAdapter/oasis:alert/oasis:info/oasis:eventCode" ;
+  ] ;
+
+  rr:subjectMap [
+    rr:template "{oasis:valueName}-{oasis:value}" ;
+    rr:class cap:EventCode ;
+    rr:termType rr:BlankNode ;
+  ] ;
+  
+   rr:predicateObjectMap [
+    rr:predicate cap:valueName ;
+    rr:objectMap [
+      rml:reference "oasis:valueName" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:value ;
+    rr:objectMap [
+      rml:reference "oasis:value" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  .
+  
+ <#Parameter> a rr:TriplesMap ;
+  rml:logicalSource [
+    rml:source [
+      a carml:Stream ;
+	  carml:declaresNamespace [
+		carml:namespacePrefix "oasis" ;
+        carml:namespaceName "urn:oasis:names:tc:emergency:cap:1.1" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "nena-ne" ;
+        carml:namespaceName "urn:nena:xml:ns:NotifyEventExchange:2.0" ;
+      ] ;
+	  
+	  carml:declaresNamespace [
+		carml:namespacePrefix "edxl-cap" ;
+        carml:namespaceName "http://release.niem.gov/niem/adapters/edxl-cap/3.0/" ;
+      ] ;
+    ] ;
+    rml:referenceFormulation ql:XPath ;
+    rml:iterator "/nena-ne:NotifyBodies/edxl-cap:AlertAdapter/oasis:alert/oasis:info/oasis:parameter" ;
+  ] ;
+
+  rr:subjectMap [
+    rr:template "{oasis:valueName}-{oasis:value}" ;
+    rr:class cap:Parameter ;
+    rr:termType rr:BlankNode ;
+  ] ;
+  
+   rr:predicateObjectMap [
+    rr:predicate cap:valueName ;
+    rr:objectMap [
+      rml:reference "oasis:valueName" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate cap:value ;
+    rr:objectMap [
+      rml:reference "oasis:value" ;
+      rr:datatype xsd:string ;
+    ] ;
+  ] ;
+  .
+  
